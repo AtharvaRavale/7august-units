@@ -388,7 +388,7 @@ function UsersManagement() {
                         <td className="px-6 py-4 whitespace-nowrap">
                           <span
                             className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                              user.is_active
+                              user.has_access
                                 ? theme === "dark"
                                   ? "bg-green-900 text-green-300"
                                   : "bg-green-100 text-green-800"
@@ -397,7 +397,7 @@ function UsersManagement() {
                                 : "bg-red-100 text-red-800"
                             }`}
                           >
-                            {user.is_active ? "Active" : "Inactive"}
+                            {user.has_access ? "Active" : "Inactive"}
                           </span>
                         </td>
                         {/* Actions */}
